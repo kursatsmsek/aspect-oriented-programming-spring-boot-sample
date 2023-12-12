@@ -1,2 +1,2 @@
 Aspect-Oriented Programming (AOP) aims to facilitate software development by separating different concerns within systems. Its primary goal is to make code more modular, understandable, and easier to maintain by focusing on specific concerns through dedicated modules. AOP often addresses common issues such as logging and error management, allowing the development of modular components that are separate from the core business logic.
-![image](https://github.com/kursatsmsek/aspect-oriented-programming-spring-boot-sample/assets/80540635/8adcc5a0-5b10-42a6-9d96-d20f48227347)
+![image](https://github.com/kursatsmsek/aspect-oriented-programming-spring-boot-sample/assets/80540635/8d8c700f-17a4-42e9-a461-840eb2e6abd9)
