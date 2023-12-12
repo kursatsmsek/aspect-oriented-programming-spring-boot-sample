@@ -1,13 +1,12 @@
 package com.kursatdev.springbootaopsample.controller;
 
+import com.kursatdev.springbootaopsample.model.SampleData;
 import com.kursatdev.springbootaopsample.service.SampleService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api")
+@RequestMapping("/api")
 public class SampleController {
 
     private final SampleService sampleService;
@@ -16,9 +15,9 @@ public class SampleController {
         this.sampleService = sampleService;
     }
 
-    @GetMapping
-    public ResponseEntity<?> getSampleMessage() {
-        String result = sampleService.getMessage();
+    @PostMapping("/sample")
+    public ResponseEntity<?> getSampleMessage(@RequestBody SampleData sampleData) {
+        String result = sampleService.getMessage(sampleData);
         return ResponseEntity.ok().body(result);
     }
 }
